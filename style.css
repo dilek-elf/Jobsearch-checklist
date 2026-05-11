@@ -1,0 +1,156 @@
+/* === Reset === */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* === Base === */
+body {
+  font-family: sans-serif;
+  background: #f0e6d8;
+  color: #3b2f24;
+  padding: 2rem 1.5rem 4rem;
+}
+
+/* === Header === */
+header {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+.badge {
+  display: inline-block;
+  background: #d9c4aa;
+  color: #6b4c2a;
+  font-size: 12px;
+  padding: 4px 14px;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #3b2f24;
+}
+
+.subtitle {
+  color: #7a6050;
+  font-size: 15px;
+  margin-bottom: 1.25rem;
+}
+
+/* === Progress Bar === */
+.progress-wrap {
+  background: #d9c4aa;
+  border-radius: 999px;
+  height: 6px;
+  max-width: 300px;
+  margin: 0 auto 0.5rem;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background: #a07850;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.progress-label {
+  font-size: 13px;
+  color: #7a6050;
+}
+
+/* === Main === */
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* === Section === */
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #7a6050;
+  margin-bottom: 0.75rem;
+}
+
+/* === List === */
+ul {
+  list-style: none;
+  background: #f7ede0;
+  border: 1px solid rgba(107, 76, 42, 0.15);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
+  border-bottom: 1px solid rgba(107, 76, 42, 0.1);
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.15s;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:hover {
+  background: #eedfc8;
+}
+
+/* === Checkbox === */
+.box {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #c4a882;
+  border-radius: 5px;
+  flex-shrink: 0;
+  background: #f7ede0;
+  transition: all 0.2s;
+}
+
+/* === Checked State === */
+li.checked .box {
+  background: #a07850;
+  border-color: #a07850;
+}
+
+li.checked {
+  color: #b09880;
+  text-decoration: line-through;
+  text-decoration-color: rgba(160, 130, 100, 0.5);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 13px;
+  color: #7a6050;
+}
+
+footer a {
+  color: #6b4c2a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
